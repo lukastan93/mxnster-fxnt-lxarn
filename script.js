@@ -5,7 +5,7 @@ function play(){
 
 async function getQuote()
 {
-  const api_url ="https://cors-anywhere.herokuapp.com/https://zenquotes.io?api=random";
+  const api_url ="https://zenquotes.io?api=random";
   const response = await fetch(api_url);
   var data = await response.json();
   document.getElementById("p1").innerHTML = data["0"]["q"];
