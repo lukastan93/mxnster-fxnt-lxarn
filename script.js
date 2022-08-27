@@ -218,8 +218,8 @@ async function getQuote()
 }
 
 function checkAnswer(score){
-  answer = document.getElementById("answer").value.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()\s]/g,"").toLowerCase();
-  control = document.getElementById("p1").innerHTML.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()\s]/g,"").toLowerCase();
+  answer = document.getElementById("answer").value.replace(/[\W]+/g,"").toLowerCase();
+  control = document.getElementById("p1").innerHTML.replace(/[\W]+/g,"").toLowerCase();
   if(control == answer){
     document.getElementById("answer-status").style.color = "Green";
     document.getElementById("answer-status").innerHTML = "Correct!";
