@@ -208,6 +208,7 @@ quotes = [
 
 function play(){
     getQuote();
+    document.getElementById("p1").style.fontFamily = "Mxnster";
     document.getElementById("score-number").innerHTML = "0"
 }
 
@@ -243,4 +244,9 @@ function incrementScore(score){
 function pickQuote(){
   let item = quotes[Math.floor(Math.random()*quotes.length)]["quote"];
   return item;
+}
+
+function switchFont(){
+       font = document.getElementById("p1").style.fontFamily;
+       font == "Mxnster" ? document.getElementById("p1").style.fontFamily = "sans-serif" : document.getElementById("p1").style.fontFamily = "Mxnster";
 }

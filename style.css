@@ -67,6 +67,9 @@ button{
 }
 
 #buttons{
-    margin:auto;
+    width: 100%;
     padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
