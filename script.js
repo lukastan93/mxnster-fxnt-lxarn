@@ -1,4 +1,4 @@
-const api_url ="https://zenquotes.io/api/random/";
+const api_url ="https://api.quotable.io/random";
 
 function play(){
   getQuote();
@@ -10,13 +10,14 @@ async function getapi(url)
 {
   const response = await fetch(url, {mode: 'cors'});
   var data = await response.json();
-  console.log(data);
+  text = data["content"];
+  return text;
 }
 
 
 async function getQuote()
 {
-  quote = getapi(api_url)["q"];
+  quote = await getapi(api_url);
   document.getElementById("p1").innerHTML = quote;
 }
 
@@ -42,11 +43,6 @@ function incrementScore(score){
     score++;
     document.getElementById("score-number").innerHTML = `${score}`
 }
-
-// function pickQuote(){
-//   let item = quotes[Math.floor(Math.random()*quotes.length)]["quote"];
-//   return item;
-// }
 
 function switchFont(){
        font = document.getElementById("p1").style.fontFamily;
