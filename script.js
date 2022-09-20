@@ -1,4 +1,5 @@
 const api_url ="https://api.quotable.io/random";
+var previousFont = "sans-serif";
 
 function play(){
   getQuote();
@@ -46,5 +47,21 @@ function incrementScore(score){
 
 function switchFont(){
        font = document.getElementById("p1").style.fontFamily;
-       font == "Mxnster" ? document.getElementById("p1").style.fontFamily = "sans-serif" : document.getElementById("p1").style.fontFamily = "Mxnster";
+       previousFont == "sans-serif" ? document.getElementById("p1").style.fontFamily = "sans-serif" : document.getElementById("p1").style.fontFamily = previousFont;
+       previousFont = font;
+}
+
+function switchMxnster(){
+  document.getElementById("p1").style.fontFamily = "Mxnster";
+  previousFont = "sans-serif";
+}
+
+function switchDemxn(){
+  document.getElementById("p1").style.fontFamily = "Demxn";
+  previousFont = "sans-serif";
+}
+
+function switchAlixn(){
+  document.getElementById("p1").style.fontFamily = "Alixn";
+  previousFont = "sans-serif";
 }

@@ -11,6 +11,32 @@
     font-display: swap;
 }
 
+@font-face {
+  font-family: 'Demxn';
+  src: url('Demxn-Regular.eot');
+  src: url('Demxn-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Demxn-Regular.woff2') format('woff2'),
+      url('Demxn-Regular.woff') format('woff'),
+      url('Demxn-Regular.ttf') format('truetype'),
+      url('Demxn-Regular.svg#Mxnster-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alixn';
+  src: url('Alixn-Regular.eot');
+  src: url('Alixn-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Alixn-Regular.woff2') format('woff2'),
+      url('Alixn-Regular.woff') format('woff'),
+      url('Alixn-Regular.ttf') format('truetype'),
+      url('Alixn-Regular.svg#Mxnster-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 html, body {
     font-family: sans-serif;
@@ -72,4 +98,8 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+#prompt-wrapper{
+  min-height:"10em";
 }

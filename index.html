@@ -9,24 +9,33 @@
 </head>
 
 <body onload="play()">
-    <div id="wrapper">
-<h2>I cxme to brxng the pxin</h2>
+  <div id="wrapper">
+    <h2>I cxme to brxng the pxin</h2>
+
 
     <p id="score">Score: <span id="score-number"></span></p>
-  <p id="p1">Here comes the pain</p>
 
-  <p id="answer-status"></p> 
-  
-  <div id="inputs">
-    <input type="text" id="answer">
     <div id="buttons">
-      <button type="button"onclick="switchFont()">Reveal Answer</button>
-      <button type="button" onclick="getQuote()">New quote</button>
-      <button type="button"onclick="checkAnswer()">Submit</button>
+      <button type="button" onclick="switchMxnster()">Mxnster</button>
+      <button type="button" onclick="switchDemxn()">Demxn</button>
+      <button type="button" onclick="switchAlixn()">Alixn</button>
     </div>
+    <div id="prompt-wrapper">
+      <p id="p1">Here comes the pain</p>
+    </div>
+
+    <p id="answer-status"></p>
+
+    <div id="inputs">
+      <input type="text" id="answer">
+      <div id="buttons">
+        <button type="button" onclick="switchFont()">Reveal Answer</button>
+        <button type="button" onclick="getQuote()">New quote</button>
+        <button type="button" onclick="checkAnswer()">Submit</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
   </div>
-<script type="text/javascript" src="script.js"></script>
-</div>
 </body>
 
 </html>
