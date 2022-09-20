@@ -212,9 +212,19 @@ function play(){
     document.getElementById("score-number").innerHTML = "0"
 }
 
+const api_url ="https://zenquotes.io/api/quotes/";
+
+async function getapi(url)
+{
+  const response = await fetch(url);
+  var data = await response.json();
+  console.log(data);
+}
+
+
 async function getQuote()
 {
-  quote = pickQuote();
+  quote = getapi(api_url)["q"];
   document.getElementById("p1").innerHTML = quote;
 }
 
