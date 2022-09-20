@@ -52,16 +52,22 @@ function switchFont(){
 }
 
 function switchMxnster(){
-  document.getElementById("p1").style.fontFamily = "Mxnster";
+  text = document.getElementById("p1");
+  text.style.fontFamily = "Mxnster";
   previousFont = "sans-serif";
+  text.style.color = "#2FF621";
 }
 
 function switchDemxn(){
-  document.getElementById("p1").style.fontFamily = "Demxn";
+  text = document.getElementById("p1");
+  text.style.fontFamily = "Demxn"
   previousFont = "sans-serif";
+  text.style.color = "#7E0C09";
 }
 
 function switchAlixn(){
-  document.getElementById("p1").style.fontFamily = "Alixn";
+  text = document.getElementById("p1");
+  text.style.fontFamily = "Alixn";
   previousFont = "sans-serif";
+  text.style.color = "#4A52D3";
 }
